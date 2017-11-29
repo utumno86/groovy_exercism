@@ -1,11 +1,6 @@
 # Grains
 
-<<<<<<< HEAD
-Calculate the number of grains of wheat on a chessboard given that the number
-on each square doubles.
-=======
 Write a program that calculates the number of grains of wheat on a chessboard given that the number on each square doubles.
->>>>>>> 2ad789826b7871525f759644370e44c338ba0e59
 
 There once was a wise servant who saved the life of a prince. The king
 promised to pay whatever the servant could dream up. Knowing that the
@@ -15,11 +10,8 @@ the next. Four on the third, and so on.
 
 There are 64 squares on a chessboard.
 
-<<<<<<< HEAD
 Write code that shows:
-=======
-Write a program that shows:
->>>>>>> 2ad789826b7871525f759644370e44c338ba0e59
+
 - how many grains were on each square, and
 - the total number of grains
 
@@ -35,7 +27,6 @@ are some additional things you could try:
 Then please share your thoughts in a comment on the submission. Did this
 experiment make the code better? Worse? Did you learn anything from it?
 
-<<<<<<< HEAD
 For installation and learning resources, refer to the
 [exercism help page](http://exercism.io/languages/groovy).
 
@@ -77,9 +68,9 @@ unchanged: 0, updated: 0, new: 1
 
 4) IntelliJ will then create a new project structure in the editor for your exercise.
 
-5) Depending on how much of the IDE you have configured before, you will likely need to add a Groovy SDK and a Java SDK (JDK 7+, ideally). These can be configured through the project/module settings by right clicking on the imported project. 
+5) Depending on how much of the IDE you have configured before, you will likely need to add a Groovy SDK and a Java SDK (JDK 7+, ideally). These can be configured through the project/module settings by right clicking on the imported project.
 
-6) You may also need to configure the location of the compiler output (exercism doesn't provide all IDE files since you could work the problems in a myriad of editors instead). This can be configured in the project settings as well. 
+6) You may also need to configure the location of the compiler output (exercism doesn't provide all IDE files since you could work the problems in a myriad of editors instead). This can be configured in the project settings as well.
 
 ## Start the exercise
 
@@ -109,17 +100,10 @@ unchanged: 0, updated: 0, new: 1
 Alternatively, you can simply comment out an entire method to have it removed from compilation and being included in test output.
 
 5) Update the main Groovy code and re-run the tests until they pass.
->>>>>>> 2ad789826b7871525f759644370e44c338ba0e59
 
 ## Source
 
 JavaRanch Cattle Drive, exercise 6 [http://www.javaranch.com/grains.jsp](http://www.javaranch.com/grains.jsp)
 
-<<<<<<< HEAD
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-=======
-## Submitting Incomplete Problems
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-
->>>>>>> 2ad789826b7871525f759644370e44c338ba0e59
