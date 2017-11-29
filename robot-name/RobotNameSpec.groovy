@@ -7,7 +7,6 @@ class RobotNameSpec extends Specification {
         expect: new RobotName().name =~ /^[a-zA-Z]{2}\d{3}$/
     }
 
-    @Ignore
     def 'generates the same name when called again'() {
         given:
             def robot = new RobotName()
@@ -15,7 +14,6 @@ class RobotNameSpec extends Specification {
             robot.name == robot.name
     }
 
-    @Ignore
     def 'different robots generate different names'() {
         given:
             def robot = new RobotName()
@@ -24,7 +22,6 @@ class RobotNameSpec extends Specification {
             robot.name != other_robot.name
     }
 
-    @Ignore
     def 'can be reset to generate another name'() {
         given:
             def robot = new RobotName()

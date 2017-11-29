@@ -18,6 +18,7 @@ each nucleotide with its complement:
 * `T` -> `A`
 * `A` -> `U`
 
+<<<<<<< HEAD
 For installation and learning resources, refer to the
 [exercism help page](http://exercism.io/languages/groovy).
 
@@ -29,6 +30,19 @@ $ groovy ./RnaTranscriptionSpec.groovy
 
 After the first test(s) pass, continue by commenting out or removing the `@Ignore` annotations prepending other tests.
 
+=======
+For installation and learning resources, refer to the
+[exercism help page](http://exercism.io/languages/groovy).
+
+Run the tests by executing the test script.
+
+```
+$ groovy ./HelloWorldSpec.groovy
+```
+
+After the first test(s) pass, continue by commenting out or removing the `@Ignore` annotations prepending other tests.
+
+>>>>>>> 2ad789826b7871525f759644370e44c338ba0e59
 When all tests pass, congratulations!
 
 ## Source
@@ -37,3 +51,7 @@ Rosalind [http://rosalind.info/problems/rna](http://rosalind.info/problems/rna)
 
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2ad789826b7871525f759644370e44c338ba0e59

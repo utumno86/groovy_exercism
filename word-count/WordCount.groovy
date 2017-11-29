@@ -1,10 +1,24 @@
-class WordCount {
+class WordCount{
+  String phrase
 
-    def WordCount(s) {
-        // YOUR CODE HERE
-    }
+  def WordCount(input) {
+    phrase = input
+  }
 
-    def wordCount() {
-        // YOUR CODE HERE
+  def wordCount(){
+    def count = [:]
+
+    def words = phrase.replaceAll(/[^a-zA-Z0-9']+/," ").split(" ")
+    words.each { word ->
+      if (word) {
+        count[word.trim().toLowerCase()] = 0
+      }
     }
+    words.each { word ->
+      if (word){
+      count[word.trim().toLowerCase()] += 1
+      }
+    }
+    return count
+  }
 }

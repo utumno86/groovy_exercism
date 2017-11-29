@@ -1,11 +1,12 @@
 class Leap {
 
-    Leap(Integer year) {
-        throw new UnsupportedOperationException('Constructor implementation is missing')
-    }
+  Integer input
 
-    def isLeapYear() {
-        throw new UnsupportedOperationException('Method implementation is missing')
-    }
+  Year(Integer year) {
+    this.input = year
+  }
 
+  def isLeapYear(){
+    (input % 4 == 0 && input % 100 != 0) || (input % 400 == 0)
+  }
 }
