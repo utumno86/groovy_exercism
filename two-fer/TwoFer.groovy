@@ -1,6 +1,9 @@
 class TwoFer {
-
-    static String twoFer(String name) {
-        throw new UnsupportedOperationException('Method is not implemented')
+  static String twoFer(String name) {
+    if (name?.trim() == '' || name == null){
+      return "One for you, one for me."
+    } else {
+      return "One for ${name}, one for me."
     }
+  }
 }
