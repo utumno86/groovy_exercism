@@ -12,10 +12,10 @@ class TriangleSpec extends Specification {
 
         and: 'false if no sides are equal'
         !Triangle.isEquilateral(5, 4, 6)
-        
-        and: 'all zero sides are illegal, so the triangle is not equilateral' 
+
+        and: 'all zero sides are illegal, so the triangle is not equilateral'
         !Triangle.isEquilateral(0, 0, 0)
-    } 
+    }
 
     def 'returns true if the triangle is isosceles'() {
         expect: 'true if last two sides are equal'
@@ -51,7 +51,6 @@ class TriangleSpec extends Specification {
         !Triangle.isScalene(7, 3, 2)
     }
 
-    @Ignore
     def 'sides may be non-integral'() {
         expect: 'equilateral triangle sides may be non-integral'
         Triangle.isEquilateral(0.5, 0.5, 0.5)
