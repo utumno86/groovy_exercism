@@ -1,41 +1,23 @@
 class Triangle {
 
     static boolean isEquilateral(Number a, Number b, Number c) {
-        if(a == b && a == c && b == c && a != 0 && b != 0 && c != 0){
-          return true
-        }
+      a == b && b == c && a > 0 && passesTriangleEquality(a, b, c)
     }
 
     static boolean isIsosceles(Number a, Number b, Number c) {
-      if((a == b || a == c || b == c) && a != 0 && b != 0 && c != 0 && passesTriangleEquality(a, b, c)){
-        return true
-      }
+      (a == b || a == c || b == c) && allSidesNonZero(a, b, c) && passesTriangleEquality(a, b, c)
     }
 
     static boolean isScalene(Number a, Number b, Number c) {
-        if(a != b && a != c && b != c && a != 0 && b != 0 && c != 0 && passesTriangleEquality(a, b, c) ){
-          return true
-        }
+      [a, b, c].unique().size() == 3 && allSidesNonZero(a, b, c) && passesTriangleEquality(a, b, c)
     }
 
     public static passesTriangleEquality(Number a, Number b, Number c){
-      def largestSide = a
-      def smallerSide1 = b
-      def smallerSide2 = c
+      a + b + c >= 2 * [a, b, c].max()
+    }
 
-      if(largestSide < b){
-        largestSide = b
-        smallerSide1 = a
-        smallerSide2 = c
-      }
-
-      if(largestSide < c){
-        largestSide = c
-        smallerSide1 = a
-        smallerSide2 = b
-      }
-
-      return smallerSide1 + smallerSide2 > largestSide
+    public static allSidesNonZero(Number a, Number b, Number c){
+      ![a, b, c].any { it <= 0 }
     }
 
 }
