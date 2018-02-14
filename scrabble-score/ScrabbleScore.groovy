@@ -1,7 +1,6 @@
 class ScrabbleScore {
 
-    static scoreWord(String word) {
-        def scoreKey = [
+    private static SCORE_KEY = [
             "A": 1,
             "E": 1, 
             "I": 1, 
@@ -29,11 +28,9 @@ class ScrabbleScore {
             "Q": 10, 
             "Z": 10
         ]
-        int score = 0
-        word.each{ letter ->
-            score += scoreKey[letter.toUpperCase()]
-        }
-        return score
+    
+    static scoreWord(String word) {
+        word.collect{ letter -> SCORE_KEY[letter.toUpperCase()] }.sum(0)
     }
 
 }
