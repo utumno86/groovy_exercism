@@ -9,35 +9,23 @@ class BinarySearch {
 
     int indexOf(item) {
         if (data == []) { return -1 }
-        if (!data.contains(item)) { return -1 }
-        def index = -2
-        int searchIndex = data.size()/2
-        def previousSearchIndex
-        def previousSearchIndexs = []
-        while (index == -2){
-            def currentValue = data[searchIndex]
-            previousSearchIndex = searchIndex
-            previousSearchIndexs.push(searchIndex)
-            if (currentValue < item){
-                searchIndex += ((data.size() - searchIndex)/2)
-                while(previousSearchIndexs.contains(searchIndex)){
-                    searchIndex ++
-                }
-            } else if (currentValue > item) {
-                searchIndex = (searchIndex/2)
-                previousSearchIndex = searchIndex
-                previousSearchIndexs.push(searchIndex)
-                while(previousSearchIndexs.contains(searchIndex) && searchIndex >= 0){
-                    searchIndex --
-                }
-                while (searchIndex < 0 || previousSearchIndexs.contains(searchIndex)){
-                    searchIndex ++
-                }
-            } else if(currentValue == item){
-                index = searchIndex
-            } else {
-                index = -1
+        int lower = 0
+        int higher = data.size()
+        int index = data.size()/2
+        while (true){
+            if (lower > higher){
+                return -1
             }
+            if (data[index] < item){
+                lower = index + 1
+            }
+            if (data[index] > item){
+                higher = index - 1
+            }
+            if (data[index] == item){
+                return index
+            }
+            index = lower + (higher - lower) / 2 
         }
         return index
     }
