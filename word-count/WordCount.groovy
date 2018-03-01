@@ -7,10 +7,8 @@ class WordCount{
 
   def wordCount(){
     def words = phrase.replaceAll(/[^a-zA-Z0-9']+/," ").split(" ")
-    words.groupBy { word ->
+    words.countBy { word ->
       word.toLowerCase()
-    }.collectEntries { key, value ->
-      [(key) : value.size()]
     }
   }
 }
