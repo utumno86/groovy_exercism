@@ -1,19 +1,35 @@
 class DoubleLinkedList<T> {
+    def data = []
 
     void push(T value) {
-        throw new UnsupportedOperationException('Method implementation is missing')
+        data[data.size()] = value
     }
 
     T pop() {
-        throw new UnsupportedOperationException('Method implementation is missing')
+        def poppedValue = data[data.size() - 1]
+        data.removeAt(data.size() - 1)
+        return poppedValue
     }
 
     T shift() {
-        throw new UnsupportedOperationException('Method implementation is missing')
+        def shifedValue = data[0]
+        def dataLength = data.size() - 1
+        data.eachWithIndex { datum, index ->
+            if (index != 0){
+                data[index -1] = datum
+            }
+        }
+        data.removeAt(dataLength)
+        return shifedValue
     }
 
     void unshift(T value) {
-        throw new UnsupportedOperationException('Method implementation is missing')
+        def tempArray = []
+        data.eachWithIndex { datum, index ->
+            tempArray[index + 1] = datum
+        }
+        data = tempArray
+        data[0] = value
     }
 
 }
