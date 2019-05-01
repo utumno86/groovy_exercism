@@ -1,24 +1,23 @@
 # Word Count
 
-Write a program that given a phrase can count the occurrences of each word in that phrase.
+Given a phrase, count the occurrences of each word in that phrase.
 
 For example for the input `"olly olly in come free"`
 
-```plain
+```text
 olly: 2
 in: 1
 come: 1
 free: 1
 ```
 
-
 For installation and learning resources, refer to the
-[exercism help page](http://exercism.io/languages/groovy).
+[Groovy resources page](https://exercism.io/tracks/groovy/resources).
 
 Run the tests by executing the test script.
 
-```
-$ groovy ./WordCountSpec.groovy
+```sh
+$ gradle test
 ```
 
 After the first test(s) pass, continue by commenting out or removing the `@Ignore` annotations prepending other tests.
