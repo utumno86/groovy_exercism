@@ -1,16 +1,17 @@
 # Gigasecond
 
-Calculate the moment when someone has lived for 10^9 seconds.
+Given a moment, determine the moment that would be after a gigasecond
+has passed.
 
 A gigasecond is 10^9 (1,000,000,000) seconds.
 
 For installation and learning resources, refer to the
-[exercism help page](http://exercism.io/languages/groovy).
+[Groovy resources page](https://exercism.io/tracks/groovy/resources).
 
 Run the tests by executing the test script.
 
-```
-$ groovy ./GigasecondSpec.groovy
+```sh
+$ gradle test
 ```
 
 After the first test(s) pass, continue by commenting out or removing the `@Ignore` annotations prepending other tests.
