@@ -5,7 +5,7 @@ class DifferenceOfSquares {
     this.input = (1..number)
   }
 
-  def squareOfSums(){
+  def squareOfSum(){
     input.sum()**2
   }
 
@@ -14,6 +14,6 @@ class DifferenceOfSquares {
   }
 
   def difference(){
-    squareOfSums() - sumOfSquares()
+    squareOfSum() - sumOfSquares()
   }
 }
