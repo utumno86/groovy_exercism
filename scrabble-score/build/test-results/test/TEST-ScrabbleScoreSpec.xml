@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ScrabbleScoreSpec" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-05-01T17:41:49" hostname="Michael-Nash's-MacBook-Pro" time="0.149">
+  <properties/>
+  <testcase name="Lowercase letter" classname="ScrabbleScoreSpec" time="0.142"/>
+  <testcase name="Uppercase letter" classname="ScrabbleScoreSpec" time="0.001"/>
+  <testcase name="Valuable letter" classname="ScrabbleScoreSpec" time="0.0"/>
+  <testcase name="Empty input" classname="ScrabbleScoreSpec" time="0.001"/>
+  <testcase name="Score for word at should be 2" classname="ScrabbleScoreSpec" time="0.0"/>
+  <testcase name="Score for word zoo should be 12" classname="ScrabbleScoreSpec" time="0.0"/>
+  <testcase name="Score for word street should be 6" classname="ScrabbleScoreSpec" time="0.0"/>
+  <testcase name="Score for word quirky should be 22" classname="ScrabbleScoreSpec" time="0.0"/>
+  <testcase name="Score for word OxyphenButazone should be 41" classname="ScrabbleScoreSpec" time="0.0"/>
+  <testcase name="Score for word pinata should be 8" classname="ScrabbleScoreSpec" time="0.001"/>
+  <testcase name="Score for word abcdefghijklmnopqrstuvwxyz should be 87" classname="ScrabbleScoreSpec" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
