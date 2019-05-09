@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RobotNameSpec" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-05-01T18:26:05" hostname="Michael-Nash's-MacBook-Pro" time="0.15">
+<testsuite name="RobotNameSpec" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-05-03T15:31:08" hostname="Michael-Nash's-MacBook-Pro" time="0.141">
   <properties/>
-  <testcase name="Generates a name" classname="RobotNameSpec" time="0.144"/>
+  <testcase name="Generates a name" classname="RobotNameSpec" time="0.135"/>
   <testcase name="Generates the same name when called again" classname="RobotNameSpec" time="0.001"/>
-  <testcase name="Different robots generate different names" classname="RobotNameSpec" time="0.002"/>
+  <testcase name="Different robots generate different names" classname="RobotNameSpec" time="0.001"/>
   <testcase name="Can be reset to generate another name" classname="RobotNameSpec" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
