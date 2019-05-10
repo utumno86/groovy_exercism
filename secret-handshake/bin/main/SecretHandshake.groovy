@@ -11,14 +11,15 @@ class SecretHandshake {
             def tempIndex = index
             if (tempIndex == 4){
                 reversed = true
-            }
-            while (tempIndex >= 4){
+            } else {
+                while (tempIndex >= 4){
                 tempIndex -= 4
             }
             if (bit.toInteger() == 1){
                 if (!(handshake.contains(secrets[tempIndex]))){
                     handshake << secrets[tempIndex]
                 }
+            }
             }
         }
 

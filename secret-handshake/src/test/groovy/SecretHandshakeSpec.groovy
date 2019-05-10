@@ -65,7 +65,6 @@ class SecretHandshakeSpec extends Specification {
         24     | ['jump']
     }
 
-    @Ignore
     def 'Reversing no actions still gives no actions'() {
         expect:
         SecretHandshake.commands(number) == expected
@@ -75,7 +74,6 @@ class SecretHandshakeSpec extends Specification {
         16     | []
     }
 
-    @Ignore
     def 'All possible actions'() {
         expect:
         SecretHandshake.commands(number) == expected
@@ -85,7 +83,6 @@ class SecretHandshakeSpec extends Specification {
         15     | ['wink', 'double blink', 'close your eyes', 'jump']
     }
 
-    @Ignore
     def 'Reverse all possible actions'() {
         expect:
         SecretHandshake.commands(number) == expected
@@ -95,7 +92,6 @@ class SecretHandshakeSpec extends Specification {
         31     | ['jump', 'close your eyes', 'double blink', 'wink']
     }
 
-    @Ignore
     def 'Do nothing for zero'() {
         expect:
         SecretHandshake.commands(number) == expected
