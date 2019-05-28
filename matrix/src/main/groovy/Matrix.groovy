@@ -1,14 +1,11 @@
 class Matrix {
-    private int[][] matrix
+    private final int[][] matrix
 
     Matrix(String asString) {
-        String[] rows = asString.split('\n')
-        matrix = new int[rows.length][rows[0].split(' ').length]
-        rows.eachWithIndex{ row, i ->
-            row.split(' ').eachWithIndex{number, j ->
-                matrix[i][j] = Integer.parseInt(number)
+        matrix = asString.split('\n').collect{ row ->
+            row.split(' ').collect{ cell ->
+                cell as int
             }
-
         }
     }
 
