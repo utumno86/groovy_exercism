@@ -1,32 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RotationalCipherSpec" tests="10" skipped="8" failures="0" errors="0" timestamp="2019-06-03T21:32:06" hostname="Michael-Nash's-MacBook-Pro" time="0.155">
+<testsuite name="RotationalCipherSpec" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-06-04T19:55:35" hostname="Michael-Nash's-MacBook-Pro" time="0.286">
   <properties/>
-  <testcase name="Rotate a by 0, same output as input" classname="RotationalCipherSpec" time="0.153"/>
+  <testcase name="Rotate a by 0, same output as input" classname="RotationalCipherSpec" time="0.268"/>
   <testcase name="Rotate a by 1" classname="RotationalCipherSpec" time="0.001"/>
-  <testcase name="Rotate a by 26, same output as input" classname="RotationalCipherSpec" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="Rotate m by 13" classname="RotationalCipherSpec" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="Rotate n by 13 with wrap around alphabet" classname="RotationalCipherSpec" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="Rotate capital letters" classname="RotationalCipherSpec" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase name="Rotate spaces" classname="RotationalCipherSpec" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="Rotate numbers" classname="RotationalCipherSpec" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="Rotate punctuation" classname="RotationalCipherSpec" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="Rotate all letters" classname="RotationalCipherSpec" time="0.0">
-    <skipped/>
-  </testcase>
+  <testcase name="Rotate a by 26, same output as input" classname="RotationalCipherSpec" time="0.003"/>
+  <testcase name="Rotate m by 13" classname="RotationalCipherSpec" time="0.002"/>
+  <testcase name="Rotate n by 13 with wrap around alphabet" classname="RotationalCipherSpec" time="0.001"/>
+  <testcase name="Rotate capital letters" classname="RotationalCipherSpec" time="0.002"/>
+  <testcase name="Rotate spaces" classname="RotationalCipherSpec" time="0.001"/>
+  <testcase name="Rotate numbers" classname="RotationalCipherSpec" time="0.002"/>
+  <testcase name="Rotate punctuation" classname="RotationalCipherSpec" time="0.001"/>
+  <testcase name="Rotate all letters" classname="RotationalCipherSpec" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
