@@ -19,6 +19,6 @@ class SaddlePoints {
             }
         }
 
-        return saddlePoints
+        saddlePoints
     }
 }
