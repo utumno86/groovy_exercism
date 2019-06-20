@@ -1,4 +1,4 @@
-# Rna Transcription
+# RNA Transcription
 
 Given a DNA strand, return its RNA complement (per RNA transcription).
 
@@ -19,12 +19,12 @@ each nucleotide with its complement:
 * `A` -> `U`
 
 For installation and learning resources, refer to the
-[exercism help page](http://exercism.io/languages/groovy).
+[Groovy resources page](https://exercism.io/tracks/groovy/resources).
 
 Run the tests by executing the test script.
 
-```
-$ groovy ./HelloWorldSpec.groovy
+```sh
+$ gradle test
 ```
 
 After the first test(s) pass, continue by commenting out or removing the `@Ignore` annotations prepending other tests.
@@ -33,7 +33,7 @@ When all tests pass, congratulations!
 
 ## Source
 
-Rosalind [http://rosalind.info/problems/rna](http://rosalind.info/problems/rna)
+Hyperphysics [http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html](http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html)
 
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
