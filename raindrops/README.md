@@ -18,12 +18,12 @@ Convert a number to a string, the contents of which depend on the number's facto
   - In raindrop-speak, this would be "34".
 
 For installation and learning resources, refer to the
-[exercism help page](http://exercism.io/languages/groovy).
+[Groovy resources page](https://exercism.io/tracks/groovy/resources).
 
 Run the tests by executing the test script.
 
-```
-$ groovy ./RaindropsSpec.groovy
+```sh
+$ gradle test
 ```
 
 After the first test(s) pass, continue by commenting out or removing the `@Ignore` annotations prepending other tests.
