@@ -14,7 +14,7 @@ The Romans wrote numbers using letters - I, V, X, L, C, D, M. (notice
 these letters have lots of straight lines and are hence easy to hack
 into stone tablets).
 
-```
+```text
  1  => I
 10  => X
  7  => VII
@@ -43,12 +43,12 @@ In Roman numerals 1990 is MCMXC:
 See also: http://www.novaroma.org/via_romana/numbers.html
 
 For installation and learning resources, refer to the
-[exercism help page](http://exercism.io/languages/groovy).
+[Groovy resources page](https://exercism.io/tracks/groovy/resources).
 
 Run the tests by executing the test script.
 
-```
-$ groovy ./RomanNumeralsSpec.groovy
+```sh
+$ gradle test
 ```
 
 After the first test(s) pass, continue by commenting out or removing the `@Ignore` annotations prepending other tests.
