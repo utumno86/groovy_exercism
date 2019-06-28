@@ -2,7 +2,7 @@ class Leap {
 
   Integer input
 
-  Year(Integer year) {
+  Leap(Integer year) {
     this.input = year
   }
 
