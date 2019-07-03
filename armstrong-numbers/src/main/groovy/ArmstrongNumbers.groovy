@@ -1,11 +1,8 @@
 class ArmstrongNumber {
 
     static isArmstrongNumber(number) {
-        def sum = 0
-        "$number".collect { it as Integer }.each { digit ->
-            sum += digit ** number.toString().length()
-        }
-        return sum == number
+        def numberLength = number.toString().length()
+        number == "$number".collect { it as Integer }.collect { it ** numberLength }.sum(0)
     }
 
 }
