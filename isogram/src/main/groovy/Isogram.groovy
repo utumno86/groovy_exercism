@@ -1,5 +1,6 @@
 class Isogram {
     static boolean isIsogram(String phrase) {
-        return phrase.toLowerCase().toCharArray().findAll{ it.isLetter() }.toSet().size() == phrase.toCharArray().findAll{ it.isLetter() }.size()
+        def nomralizedChars = phrase.toLowerCase().toCharArray().findAll{ it.isLetter() }
+        nomralizedChars.toSet().size() == nomralizedChars.size()
     }
 }
